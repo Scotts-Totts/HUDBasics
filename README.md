@@ -1,7 +1,7 @@
 # HUDBasics
 FiveM script including HUD, Priorities, and more.  
 
-Provided is a postal script made by DevBlocky, check out his work here: https://github.com/DevBlocky/nearest-postal
+Provided is a postal script made by DevBlocky (with some slight modifications by me), check out his work here: https://github.com/DevBlocky/nearest-postal
 
 All other edits to the code should be done in the config.lua. Unless you know what you're doing, don't mess with any of the other files.  
 
