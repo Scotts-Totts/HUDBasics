@@ -3,6 +3,7 @@ game 'gta5'
 
 author "Scott's Tots#0875"
 description 'Priority, AOP, and HUD script'
+version "v1.0"
 
 client_scripts {
     'functions.lua',
