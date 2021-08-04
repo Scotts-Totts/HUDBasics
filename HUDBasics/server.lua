@@ -138,9 +138,7 @@ Citizen.CreateThread(function()
         if CountyStatus == 3 then 
             TriggerClientEvent("County-Cooldown", -1, CountyCooldown)
         end
-        if Config.AOP.enable then 
-            TriggerClientEvent("HUD-AOP", -1, AOP)
-        end
+        TriggerClientEvent("HUD-AOP", -1, AOP)
     end
 end)
 Citizen.CreateThread(function()
