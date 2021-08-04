@@ -65,11 +65,19 @@ Citizen.CreateThread(function()
     while true do 
         Wait(5)
         if Config.General.DisplayHUD then
-            ScreenText(Config.AOP.x, Config.AOP.y, Config.AOP.size, Config.AOP.prefix..clientAOP)
-            ScreenText(Config.General.Discord.x,Config.General.Discord.y,Config.General.Discord.size, Config.General.Discord.text)
-            ScreenText(Config.Postals.x, Config.Postals.y, Config.Postals.size, Config.Postals.prefix..postal)
-            ScreenText(Config.Compass.x, Config.Compass.y, Config.Compass.size, Config.Compass.prefix:gsub("{heading}", heading))
-            ScreenText(Config.Compass.x+.04, Config.Compass.y+.0060, Config.Compass.size-.25, Config.Compass.Location.prefix..streetName)
+            if Config.AOP.enable then
+                ScreenText(Config.AOP.x, Config.AOP.y, Config.AOP.size, Config.AOP.prefix..clientAOP)
+            end
+            if Config.General.Discord.enable then
+                ScreenText(Config.General.Discord.x,Config.General.Discord.y,Config.General.Discord.size, Config.General.Discord.text)
+            end
+            if Config.Postals.enable then
+                ScreenText(Config.Postals.x, Config.Postals.y, Config.Postals.size, Config.Postals.prefix..postal)
+            end
+            if Config.Compass.enable then
+                ScreenText(Config.Compass.x, Config.Compass.y, Config.Compass.size, Config.Compass.prefix:gsub("{heading}", heading))
+                ScreenText(Config.Compass.x+.04, Config.Compass.y+.0060, Config.Compass.size-.25, Config.Compass.Location.prefix..streetName)
+            end
         end
     end
 end)
