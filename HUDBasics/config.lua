@@ -11,8 +11,8 @@ Config.General = {
         size = .55,
         text = "~c~discord.gg/~g~ INSERT DISCORD NAME HERE ",
         commandtext = "^3Join our discord using the link: discord.gg/ INSERT DISCORD NAME HERE", --text returned when player does /discord
-        CHATLOGS = "https://discord.com/api/webhooks/813265915394785290/iDQkzXa5JYapqTt8jn9xDqtWIc2xdmJdHWzqvkHbOHXzk8hK4zJn4-urIwKW33rx1KjM", --discord webhook for command logging
-        PRIOLOGS = "https://discord.com/api/webhooks/782793382732890130/ispfqQQAEYYEfouBPpGR9cvHuArDGLGeQI8XpR7bKXj8sxZUhS4tEWsw4uzZlsuSSPb1", --discord webhook for priority command logging
+        CHATLOGS = "WEBHOOK", --discord webhook for command logging
+        PRIOLOGS = "WEBHOOK", --discord webhook for priority command logging
     },
 }
 
